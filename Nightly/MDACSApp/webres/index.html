@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet"> 
+    <link type="text/css" href="utility?bootstrap.mdacs.css" rel="stylesheet">
+    <style>
+        .MDACSFrame {
+            background-color: white;
+        }
+
+        .MDACSConsoleContainer {
+            height: 4in;
+            overflow: scroll;
+        }
+
+        // The pretty view of the command in JSON form.
+        .MDACSConsolePrettyJSONCommand {
+            font-family: monospace;
+            white-space: pre;
+            font-size: 14pt;
+        }
+
+        .form-concmdline {
+            font-family: monospace;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body style="background-color: #a3b7c4;">
+    <div id="root">
+    </div>
+
+    <script src="utility?react.development.js"></script>
+    <script src="utility?react-dom.development.js"></script>
+    <script src="utility?react-bootstrap.min.js"></script>
+    <script src="utility?superagent.js"></script>
+    <script src="utility?sha512.js"></script>
+    <script>
+        const request = window.superagent;
+        const FormGroup = ReactBootstrap.Alert;
+        const ControlLabel = ReactBootstrap.ControlLabel;
+        const FormControl = ReactBootstrap.FormControl;
+        const Button = ReactBootstrap.Button;
+        const Panel = ReactBootstrap.Panel;
+        const Tabs = ReactBootstrap.Tabs;
+        const Tab = ReactBootstrap.Tab;
+        const Label = ReactBootstrap.Label;
+        const ListGroup = ReactBootstrap.ListGroup;
+        const ListGroupItem = ReactBootstrap.ListGroupItem;
+        const Checkbox = ReactBootstrap.Checkbox;
+        const Alert = ReactBootstrap.Alert;
+        const Table = ReactBootstrap.Table;
+        const Popover = ReactBootstrap.Popover;
+        const Overlay = ReactBootstrap.Overlay;
+        const DropdownButton = ReactBootstrap.DropdownButton;
+        const Modal = ReactBootstrap.Modal;
+
+        bootstrapUtils.addStyle(FormControl, 'concmdline');
+    </script>
+    <script src="utility?package.js"></script>
+</body>
+</html>
